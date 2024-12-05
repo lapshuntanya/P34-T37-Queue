@@ -66,8 +66,7 @@ namespace myQueue {
 
 		void show()const {
 			if (isEmpty()) {
-				cout << "MyQueue is empty!\n";
-				return;
+				cout << "MyQueue is empty!\n";	return;
 			}
 			Node<U>* p = head;
 			while (p != nullptr) {
