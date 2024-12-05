@@ -65,7 +65,16 @@ namespace myQueue {
 		}//реалізація
 
 		void show()const {
-
+			if (isEmpty()) {
+				cout << "MyQueue is empty!\n";
+				return;
+			}
+			Node<U>* p = head;
+			while (p != nullptr) {
+				cout << p->info << " ";
+				p = p->next;
+			}
+			cout << endl;
 		}//реалізація
 	};
 }
