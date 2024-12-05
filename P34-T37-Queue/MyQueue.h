@@ -47,7 +47,7 @@ namespace myQueue {
 			else {
 				current->next = el;
 				el->prev = current;
-				current = curent->next;
+				current = current->next;
 			}
 
 		}//реалізація
